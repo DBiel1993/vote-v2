@@ -1,5 +1,7 @@
+import config from './config.js'; // Adjust the import path based on your project structure
+
 document.addEventListener('DOMContentLoaded', () => {
-    const apiUrl = 'https://vote-app-livid.vercel.app/api'; // Ensure this points to the correct Vercel URL with /api
+    const apiUrl = config.apiUrl; // Use the API URL from the config file
 
     const sessionIdInput = document.getElementById('sessionIdInput');
     const createSessionBtn = document.getElementById('createSessionBtn');
